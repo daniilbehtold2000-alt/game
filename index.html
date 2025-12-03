@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bechtold Games</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #ffffff;
+            color: #111111;
+            line-height: 1.5;
+        }
+        header {
+            border-bottom: 1px solid #000;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 10;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+        nav a {
+            margin-left: 16px;
+            text-decoration: none;
+            color: #111;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 24px;
+        }
+        section {
+            margin-bottom: 48px;
+        }
+        h1, h2, h3 {
+            margin-bottom: 12px;
+        }
+        .hero {
+            padding: 32px 24px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .hero-subtitle {
+            color: #444;
+            margin-bottom: 16px;
+        }
+        .btn-row {
+            margin-top: 8px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 4px;
+            border: 1px solid #000;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+        .card {
+            border: 1px solid #000;
+            padding: 16px;
+        }
+        ul {
+            padding-left: 18px;
+        }
+        footer {
+            border-top: 1px solid #000;
+            padding: 16px 24px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <div class="logo">BECHTOLD GAMES</div>
+        <nav>
+            <a href="#about">О нас</a>
+            <a href="#games">Выпущенные игры</a>
+            <a href="#projects">Будущие проекты</a>
+            <a href="#publishing">Издательство</a>
+            <a href="#buy">Где купить</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h1 class="hero-title">Bechtold Games</h1>
+        <p class="hero-subtitle">
+            Настольные игры с историей. Черно-белый стиль, глубокие правила и максимум уважения к игроку.
+        </p>
+        <div class="btn-row">
+            <a class="btn" href="#games">Выпущенные игры</a>
+            <a class="btn" href="#projects">Будущие проекты</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>О студии</h2>
+        <p>
+            Bechtold Games — небольшое независимое издательство настольных игр. 
+            Мы делаем стратегии и образовательные игры в исторической тематике.
+        </p>
+        <p>
+            Наши проекты рассчитаны и на хардкорных игроков, и на школьников, 
+            которым важно лучше понять историю через игру, а не сухие тексты.
+        </p>
+    </section>
+
+    <section id="games">
+        <h2>Выпущенные игры</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Правление Петра I (рабочее название)</h3>
+                <p>Евро-стратегия о реформах и борьбе за влияние в Российской империи начала XVIII века.</p>
+                <ul>
+                    <li>2–4 игрока</li>
+                    <li>Время партии: 90–120 минут</li>
+                    <li>Жанр: евро-стратегия, управление ресурсами</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Проект №2</h3>
+                <p>Заглушка для будущего релиза. Игра в разработке.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Будущие проекты</h2>
+        <p>
+            Мы тестируем несколько прототипов исторических и образовательных игр. 
+            Подробная информация появится ближе к релизу.
+        </p>
+    </section>
+
+    <section id="publishing">
+        <h2>Издательство</h2>
+        <p>
+            Bechtold Games открыто к сотрудничеству с авторами исторических и 
+            образовательных настольных игр. В будущем здесь появятся условия приёма прототипов.
+        </p>
+    </section>
+
+    <section id="buy">
+        <h2>Где купить</h2>
+        <p>
+            Сейчас наши проекты находятся в разработке. После выхода мы добавим сюда список магазинов 
+            и маркетплейсов, где можно будет приобрести игры.
+        </p>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>E-mail для связи: info@bechtold-games.ru (заглушка).</p>
+        <p>Позже здесь появится форма обратной связи и ссылки на социальные сети.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        © Bechtold Games, сайт в разработке.
+    </div>
+</footer>
+</body>
+</html>
