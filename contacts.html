@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bechtold Games — Контакты</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #ffffff;
+            color: #111111;
+            line-height: 1.5;
+        }
+        header {
+            border-bottom: 1px solid #000;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 10;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+        nav a {
+            margin-left: 16px;
+            text-decoration: none;
+            color: #111;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 24px;
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        h1, h2 {
+            margin-bottom: 12px;
+        }
+        .card {
+            border: 1px solid #000;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.9rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #000;
+            background: #fff;
+            color: #111;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+        button {
+            padding: 8px 16px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        button:hover {
+            background: #000;
+            color: #fff;
+        }
+        footer {
+            border-top: 1px solid #000;
+            padding: 16px 24px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <div class="logo">BECHTOLD GAMES</div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="games.html">Выпущенные игры</a>
+            <a href="projects.html">Будущие проекты</a>
+            <a href="publishing.html">Издательство</a>
+            <a href="buy.html">Где купить</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section>
+        <h1>Контакты</h1>
+        <p>
+            По любым вопросам о наших играх, сотрудничестве, образовательных пилотах и прессе 
+            вы можете связаться с нами через форму ниже или по указанным адресам электронной почты.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Форма обратной связи</h2>
+        <!-- Эта форма пока никуда не отправляет данные, это просто макет -->
+        <form>
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" placeholder="Ваше имя">
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com">
+
+            <label for="type">Тип обращения</label>
+            <select id="type" name="type">
+                <option>Купить игру</option>
+                <option>Сотрудничество</option>
+                <option>Образовательные проекты</option>
+                <option>Пресса и СМИ</option>
+                <option>Другое</option>
+            </select>
+
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ваш вопрос или предложение"></textarea>
+
+            <button type="button">Отправить (макет)</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Прямые контакты</h2>
+        <p>E-mail издательства (общие вопросы): <strong>info@bechtold-games.ru</strong> (заглушка).</p>
+        <p>E-mail для школ и образовательных проектов: <strong>school@bechtold-games.ru</strong> (заглушка).</p>
+        <p>Социальные сети и другие каналы связи будут добавлены по мере запуска проектов.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        © Bechtold Games, сайт в разработке.
+    </div>
+</footer>
+
+</body>
+</html>
