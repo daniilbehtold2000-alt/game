@@ -1,4 +1,4 @@
-/* Base */
+/* Base – общий набор стилей, вынесенный из всех страниц */
 * {
     box-sizing: border-box;
     margin: 0;
