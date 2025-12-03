@@ -21,6 +21,11 @@ body {
     line-height: 1.6;
 }
 
+/* Отступ для якорей, чтобы заголовки не перекрывались фиксированной шапкой */
+[id] {
+    scroll-margin-top: 90px;
+}
+
 img {
     max-width: 100%;
     display: block;
